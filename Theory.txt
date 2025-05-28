@@ -1,23 +1,3 @@
-<div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2" >
-          <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl" >
-            <button 
-            onClick={() => setColor("red")}
-            className="outline-none px-4 py-1 rounded-full" style={{backgroundColor: "red"}}
-            >Red</button>
-
-            <button 
-            onClick={() => setColor("green")}
-            className="outline-none px-4 py-1 rounded-full" style={{backgroundColor: "green"}}
-            >green</button>
-
-            <button 
-            onClick={() => setColor("blue")}
-            className="outline-none px-4 py-1 rounded-full" style={{backgroundColor: "blue"}}
-            >blue</button>
-
-            <button 
-            onClick={() => setColor("purple")}
-            className="outline-none px-4 py-1 rounded-full" style={{backgroundColor: "purple"}}
-            >purple</button>
-          </div>
-        </div>
+1. use Callback: used for optimization it calls the function inside it when the dependencies are changed and returns a memorized function 
+2.useeffect: runs the function inside it whenever the page renders first-time or dependencies are changed
+3.use ref : used to give reference of selected components in our page so that functions can be performed on referenced values
