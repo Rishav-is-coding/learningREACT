@@ -26,7 +26,7 @@ function App() {
   return (
     <div 
       className='w-full h-screen flex flex-wrap justify-center items-center bg-no-repeat'
-      style={{backgroundImage: `url('https://images.pexels.com/photos/3483098/pexels-photo-3483098.jpeg?auto=compress&cs=tinysrgb&w=600')`, backgroundSize: 'cover', backgroundPosition:'center'}}
+      style={{backgroundImage: `url('https://images.pexels.com/photos/3483098/pexels-photo-3483098.jpeg')`, backgroundSize: 'cover', backgroundPosition:'center'}}
     >
       <div className='w-full'>
         <div className='w-full max-w-md mx-auto border border-gray-50 rounded-lg p-5 backdrop-blur-sm bg-white/30'>
