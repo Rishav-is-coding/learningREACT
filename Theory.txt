@@ -1,3 +1,38 @@
 1. use Callback: used for optimization it calls the function inside it when the dependencies are changed and returns a memorized function 
 2.useeffect: runs the function inside it whenever the page renders first-time or dependencies are changed
 3.use ref : used to give reference of selected components in our page so that functions can be performed on referenced values
+
+useDispatch (from react-redux) -> when you want to update a global state (returns a refrence to a function dispatch )
+
+useSelector (from react-redux) -> when you extract data from redux store using a selector function -> allows you to read a specific value from redux store
+
+Link -> used to navingate to other path WITHOUT RELOADING THE PAGE
+useNavigate (from react-router-dom) -> used to navigate to another route -> returns refrence to another function navigate
+
+useState (from react) -> manages local state of the components (toggling models, sidebars, etc) => [variable, function] = useState(default value)
+
+toast (from react-hot-toast) -> api to trigger toast messages(toast.success , toast.error, etc)
+Toaster (from react-hot-toast) -> React component that renders the toast in UI
+
+useMutation (from @tanstack/react-query) -> hook for handeling any operations that changes server data. It gives a function which you can call when needed
+    mutate()
+        mutationFn(variable)
+        isLoading = true,
+        onSuccess () => {}
+        onError (error) => {}
+
+useForm (from react-hook-form) -> hook for handeling forms effectevily -> saves us from writing lot of boilerplate code
+
+PropType -> runtime type checking of props passed into component
+    eg --
+        componentName.propTypes = {
+            xyz1 : PropTypes.abc1,
+            xyz2 : PropTypes.abc2
+        }
+
+useParams (from react-router-dom) -> extract url parameters from the route
+OutLet (from react-router-dom) -> acts as a placeholder for rendering child routes
+
+useQuery (from @tanstack/react-query) -> auto handles loading, success and error status
+
+
